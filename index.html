@@ -4,23 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jimmy Driskell Portfolio</title>
+    <title>Jimmy Driskell</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/190c434359.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!----- Header ----->
 <div id="header">
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resumeA">Resume</a></li>
+                <li><a href="#aboutA">About</a></li>
+                <li><a href="#servicesA">Services</a></li>
+                <li><a href="#portfolioA">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
+
+
+<!----- Home ----->
+<div id="home">
+    <div class="container">
+        <div class="home-text">
+            <div class="center">
+                <h1>Hello, I'm Jimmy Driskell</h1>
+                <p>Software Engineer, Game Developer, and Artist</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----- Resume ----->
+<a id="resumeA" class="anchor"></a>
+<div id="resume">
+    <div class="container">
+        <div class="center">
+            <div class="resume">
+                <h1 class="sub-title"><a href=pdf/resume.pdf>You can view my resume by clicking here.</a></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----- About ----->
+<a id="aboutA" class="anchor"></a>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I am James Driskell, although I prefer to be called Jimmy! I am an undergraduate student from Iowa State University majoring in software engineering and minoring in digital media.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Game Development</span>
+                            <br>Proficiency with GameMaker Studio
+                            <br>Experience with Unity
+                            <br>Experience with C# and Monogame
+                            </li>
+                        <li><span>Graphic Design</span><br>Experienced with Adobe Photoshop, After Effects, and Illustrator</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>App Development</span><br>Building Android apps using Java</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Game Development Club Game Jam Victories</span>
+                            <br> Fall 2021 - 3rd Place
+                            <br> Spring 2022 - 1st Place
+                            <br> Fall 2022 - 1st Place
+                            <br> Spring 2023 - 2nd Place
+                            </li>
+                        <li><span>Collins Aerospace Internship</span><br>Designing a VR interface in Unity</li>
+                        <li><span>Virtual Reality Application Center Internship</span><br>AI Research</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Software Engineering Major</span>
+                            <br>Completed classes focused on object-oriented programming
+                            <br>Recently studied computer graphics and software testing
+                            </li>
+                        <li><span>Digital Media Minor</span>
+                            <br>Character Animation Proficiency
+                            <br>Cinema 4D Modeling Experience
+                            <br>Proficient with Adobe products such as Illustrator and Photoshop
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----- Services ----->
+<a id="servicesA" class="anchor"></a>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <a href="#portfolio">
+                <h2>Web/App Design</h2>
+                <p>webdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesign</p>
+                <!--<a href="#">learn more</a>-->
+                </a>
+            <a href="#portfolio">
+                <h2>Game Development</h2>
+                <p>webdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesign</p>
+            </a>
+            <a href="#portfolio">
+                <!--<i class="fa-solid fa-code"></i>-->
+                <h2>Art and Animation</h2>
+                <p>webdesignwebdesign</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!----- Portfolio ----->
+<a id="portfolioA" class="anchor"></a>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/user.png">
+                <div class="layer">
+                    <h3>Filler</h3>
+                    <p> blahblahblahblah</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/user.png">
+                <div class="layer">
+                    <h3>Filler</h3>
+                    <p> blahblahblahblah</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/user.png">
+                <div class="layer">
+                    <h3>Filler</h3>
+                    <p> blahblahblahblah</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="btn">See more</a>-->
+    </div>
+</div>
+
+<!----- Contact ----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>jimmydriskell1@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>(319) 651-8994</p>
+                <!----
+                <div class="social-icons">
+                    <a href=""><i class=fab fa-linkedin></i></a>
+                </div>
+                
+                <a href="pdf/my-cv.pdf" download class="btn btn2">Download CV</a>
+                -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname)
+    {
+        for (tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwT3DwuTzCoy8TnDMWL3tm7G3gBs3uZ35ImaLWAxGWzDPTORHJy2dfz83ODyhaoV-yb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Your message has been sent to Jimmy!"
+            setTimeout(function()
+            {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
 </body>
 </html>

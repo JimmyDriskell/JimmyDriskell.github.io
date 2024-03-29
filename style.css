@@ -23,6 +23,10 @@ body{
     background: #262626;
     z-index: 10;
 }
+.header-name{
+    font-size: 48px;
+    font-weight: 600;
+}
 
 /*-----------------Home-----------------*/
 #home{
@@ -284,6 +288,29 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+
+.work-tab-titles{
+    
+    display: flex;
+    margin: 20px 0 40px
+}
+
+
+.work-tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.work-tab-contents{
+    display: none;
+}
+
+.work-tab-contents.work-active-tab{
+    display: block;
+}
+
 /*-----------------Contact-----------------*/
 .contact-left{
     flex-basis: 35%;
@@ -328,4 +355,10 @@ form .btn2{
     color: #00ff88;
     margin-top: -40px;
     display: block;
+}
+
+.video-center{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }

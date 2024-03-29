@@ -13,7 +13,8 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
+            <p class=header-name>Jimmy Driskell</p>
+            <!-- <img src="images/logo.png" class="logo"> -->
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#resumeA">Resume</a></li>
@@ -119,21 +120,30 @@
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
+
+        
         <div class="services-list">
-            <a href="#portfolio">
-                <h2>Web/App Design</h2>
-                <p>webdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesign</p>
-                <!--<a href="#">learn more</a>-->
+            <div class="work-tab-titles">
+                <a class="work-tab-links" onclick="workopentab('coding')">
+                    <h2>Web/App Design</h2>
+                    <p>webdesignw
+                        ebdesignwebdes
+                        ignwebdesign
+                        webdesignwe
+                        bdesignwebdesi
+                        gn webdesignwebdesignwebdesignwebdesign</p>
+                    <!--<a href="#">learn more</a>-->
+                    </a>
+                <a class="work-tab-links work-active-link" onclick="workopentab('gamedev')">
+                    <h2>Game Development</h2>
+                    <p>Whether it comes to excelling at game jams or working on my own passion projects, my game development skills make me </p>
                 </a>
-            <a href="#portfolio">
-                <h2>Game Development</h2>
-                <p>webdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesignwebdesign</p>
-            </a>
-            <a href="#portfolio">
-                <!--<i class="fa-solid fa-code"></i>-->
-                <h2>Art and Animation</h2>
-                <p>webdesignwebdesign</p>
-            </a>
+                <a class="work-tab-links" onclick="workopentab('art')">
+                    <!--<i class="fa-solid fa-code"></i>-->
+                    <h2>Art and Animation</h2>
+                    <p>I bring numerous artistic capabilities to the table, including but not limited to traditional character animation, 3D modeling, graphic design, pixel art, and traditional illustration.</p>
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -143,32 +153,88 @@
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Portfolio</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/user.png">
-                <div class="layer">
-                    <h3>Filler</h3>
-                    <p> blahblahblahblah</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+        <div class="work-tab-contents" id="coding">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pacbros.png">
+                    <div class="layer">
+                        <h3>The Pac-Man Brothers</h3>
+                        <p>This fan project not only precisely recaptures the experience of the original Pac-Man game, but it also expands upon it with fresh ideas.</p>
+                        <a href="https://thatlefthandman.itch.io/the-pac-man-brothers"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/user.png">
-                <div class="layer">
-                    <h3>Filler</h3>
-                    <p> blahblahblahblah</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/user.png">
-                <div class="layer">
-                    <h3>Filler</h3>
-                    <p> blahblahblahblah</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <div class="work">
+                    <img src="images/pacbros.png">
+                    <div class="layer">
+                        <h3>Banana Man</h3>
+                        <p> blahblahblahblah</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="work-tab-contents work-active-tab" id="gamedev">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pacbros.png">
+                    <div class="layer">
+                        <h3>The Pac-Man Brothers</h3>
+                        <p>This fan project not only precisely recaptures the experience of the original Pac-Man game, but it also expands upon it with fresh ideas.</p>
+                        <a href="https://thatlefthandman.itch.io/the-pac-man-brothers"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/banana.png">
+                    <div class="layer">
+                        <h3>Banana Man</h3>
+                        <p>Being another game jam submission that has won, Banana Man recaptures the NES aesthetic and controls while offering players a simple yet addicting challenge.</p>
+                        <a href="https://thatlefthandman.itch.io/banana-man"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cloud.png">
+                    <div class="layer">
+                        <h3>Cloud Boy</h3>
+                        <p>Being the first game jam project I've submitted that has won, Cloud Boy takes the horror genre into a unique perspective.</p>
+                        <a href="https://thatlefthandman.itch.io/cloudboy"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-tab-contents" id="art">
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/world11.png">
+                    <div class="layer">
+                        <h3>World 1-1: A Short Film</h3>
+                        <p>My final project for my character animation class that takes on a pixel aesthetic.</p>
+                        <a href="world11.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/user.png">
+                    <div class="layer">
+                        <h3>Banana Man</h3>
+                        <p> blahblahblahblah</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/user.png">
+                    <div class="layer">
+                        <h3>Cloud Boy</h3>
+                        <p> blahblahblahblah</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!--<a href="#" class="btn">See more</a>-->
     </div>
 </div>
@@ -218,6 +284,25 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var worktablinks = document.getElementsByClassName("work-tab-links");
+    var worktabcontents = document.getElementsByClassName("work-tab-contents");
+    
+    function workopentab(worktabname)
+    {
+        for (worktablink of worktablinks)
+        {
+            worktablink.classList.remove("work-active-link");
+        }
+        for (worktabcontent of worktabcontents)
+        {
+            worktabcontent.classList.remove("work-active-tab");
+        }
+        event.currentTarget.classList.add("work-active-link");
+        document.getElementById(worktabname).classList.add("work-active-tab");
     }
 </script>
 

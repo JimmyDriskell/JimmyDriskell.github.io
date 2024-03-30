@@ -210,6 +210,13 @@ nav ul li a:hover::after{
 .services-list a:hover{
     background: #ff004f;
     transform: translateY(-10px);
+    cursor: pointer;
+}
+.services-list a::after{
+    background: #ff004f;
+}
+.services-list.work-tab-links.work-active-link::after{
+    background: #ff004f;
 }
 
 /*-----------------Portfolio-----------------*/
@@ -288,13 +295,11 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-
 .work-tab-titles{
     
     display: flex;
     margin: 20px 0 40px
 }
-
 
 .work-tab-links{
     margin-right: 50px;
@@ -361,4 +366,31 @@ form .btn2{
     display: block;
     text-align: center;
     margin: 0 auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 40px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.adobe-gallery{
+    display: block;
+    margin: 40 auto;
+}
+
+.fb-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.pixel-gallery{
+    display: block;
+    margin: 40 auto;
+    width: 100%;
 }

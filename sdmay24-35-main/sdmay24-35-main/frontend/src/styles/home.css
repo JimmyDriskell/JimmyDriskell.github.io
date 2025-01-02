@@ -1,0 +1,92 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: #583096;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.intro {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tool-description {
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 2;
+  margin-left: 5.4em;
+  margin-right: 5.4em;
+  font-size: 1.5em;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #faf8fb;
+  justify-content: center;
+}
+
+.content-placeholder {
+  margin-top: 20px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-image {
+  margin-top: 20px;
+  margin-right: 1.2em;
+  margin-left: 1.2em;
+  max-width: 75%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  margin-right: 1.2em;
+  margin-left: 1.2em;
+  font-size: 1em;
+  background-color: lightskyblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: gray;
+}
+.footer-wrapper {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 10px;
+  }
+
+  header {
+    font-size: 18px;
+  }
+
+  main {
+    margin-top: 10px;
+  }
+}

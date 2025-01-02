@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdminSurvey> should render component 1`] = `
+<div
+  className="admin-survey-container"
+>
+  <div
+    style={
+      {
+        "marginTop": "20px",
+      }
+    }
+  >
+    <label>
+      Select a Survey to Edit: 
+      <select
+        onChange={[Function]}
+      >
+        <option
+          disabled={false}
+          value=""
+        >
+          Please select a survey name
+        </option>
+      </select>
+    </label>
+  </div>
+  <div
+    className="survey-questions"
+  >
+    <div>
+      <h1>
+        Edit Survey Questions
+      </h1>
+    </div>
+  </div>
+</div>
+`;

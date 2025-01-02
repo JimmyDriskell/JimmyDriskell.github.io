@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdminHome> should render component 1`] = `
+<div>
+  <main>
+    <section
+      className="intro"
+    >
+      <h2>
+        Welcome to MySTEMGrowth Admin Profile!
+      </h2>
+    </section>
+    <section
+      className="tool-description"
+    >
+      <p>
+        This tool will help students to understand their beliefs about their STEM abilities. This inventory will capture a snapshot that will generate a profile that students can use to recognize their STEM growth potential.
+      </p>
+    </section>
+    <section
+      className="adminInfo"
+    >
+      <h4>
+        Access the following pages to view student's results, create new programs, or make changes to the survey questions!
+      </h4>
+    </section>
+  </main>
+  <div
+    className="container"
+  >
+    <div>
+      <div>
+        <div
+          className="content-placeholder"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

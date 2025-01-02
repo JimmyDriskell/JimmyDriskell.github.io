@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login> should render component 1`] = `
+<div>
+  <div
+    className="split-screen"
+  >
+    <div
+      className="split-left"
+    >
+      <div
+        className="gradient-background"
+      >
+        <div
+          className="logo-container"
+        >
+          <h1
+            className="title"
+          >
+            MySTEMGrowth Profile
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      className="split-right"
+    >
+      <div
+        className="right-content"
+      >
+        <div
+          className="login-card"
+        >
+          <h2
+            className="header"
+          >
+            Login to your account
+          </h2>
+          <p>
+            New here?
+             
+          </p>
+          <div
+            className="input-container"
+          >
+            <p
+              className="input-title"
+            >
+              Email
+            </p>
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="Enter Email Address"
+              type="text"
+            />
+          </div>
+          <div
+            className="input-container"
+          >
+            <p
+              className="input-title"
+            >
+              Enter Password
+            </p>
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <div
+            className="recovery-container"
+          />
+          <p>
+            By creating account, you agree to our
+             
+          </p>
+          <p
+            className="error-message"
+          />
+          <button
+            className="login-button"
+            onClick={[Function]}
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

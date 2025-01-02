@@ -1,0 +1,75 @@
+image: node:20
+
+before_script:
+  - uname -a
+  - node -v
+  - apt-get update && apt-get install -y python3-pip
+  - apt-get install -y python3-venv
+  - python3 -m venv env # Create a new virtual environment
+  - source env/bin/activate # Activate the virtual environment
+  - pip3 install awscli --upgrade
+  - export PATH=$PATH:$HOME/.local/bin
+
+# Define stages that will be executed sequentially
+stages:
+  - build
+  - test
+  - deploy
+
+# Job for building the application
+build:
+  stage: build
+  script:
+    - echo "Building the application..."
+    - cd frontend
+    - npm i
+
+# Job for testing the application
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - cd frontend
+    - npm i
+    - npm test
+    - cd ..
+
+# Job for deploying the application
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the application..."
+  only:
+    - master # Only deploy when changes are pushed to the master branch
+
+deploy_test_backend:
+  stage: deploy
+  script:
+    - cd backend
+    - apt-get update && apt-get install -y zip
+    - npm install
+    - zip -r $CI_COMMIT_SHA.zip .
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_DEFAULT_REGION
+    - aws s3 cp $CI_COMMIT_SHA.zip s3://$AWS_S3_TEST_BUCKET/$CI_COMMIT_SHA.zip
+    - aws elasticbeanstalk create-application-version --application-name $AWS_EB_TEST_APPLICATION_NAME --version-label $CI_COMMIT_SHA --source-bundle S3Bucket=$AWS_S3_TEST_BUCKET,S3Key=$CI_COMMIT_SHA.zip
+    - aws elasticbeanstalk update-environment --application-name $AWS_EB_TEST_APPLICATION_NAME --environment-name $AWS_EB_TEST_ENV_NAME --version-label $CI_COMMIT_SHA
+  only:
+    - fix-pipeline
+
+deploy_backend:
+  stage: deploy
+  script:
+    - cd backend
+    - apt-get update && apt-get install -y zip
+    - npm install
+    - zip -r $CI_COMMIT_SHA.zip .
+    - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+    - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+    - aws configure set region $AWS_DEFAULT_REGION
+    - aws s3 cp $CI_COMMIT_SHA.zip s3://$AWS_S3_BUCKET/$CI_COMMIT_SHA.zip
+    - aws elasticbeanstalk create-application-version --application-name $AWS_EB_APPLICATION_NAME --version-label $CI_COMMIT_SHA --source-bundle S3Bucket=$AWS_S3_BUCKET,S3Key=$CI_COMMIT_SHA.zip
+    - aws elasticbeanstalk update-environment --application-name $AWS_EB_APPLICATION_NAME --environment-name $AWS_EB_ENV_NAME --version-label $CI_COMMIT_SHA
+  only:
+    - main

@@ -215,9 +215,11 @@ nav ul li a:hover::after{
 .services-list a::after{
     background: #ff004f;
 }
-.services-list.work-tab-links.work-active-link::after{
+.work-tab-links.work-active-link {
     background: #ff004f;
 }
+
+
 
 /*-----------------Portfolio-----------------*/
 #portfolio{
@@ -393,4 +395,11 @@ form .btn2{
     display: block;
     margin: 40 auto;
     width: 100%;
+}
+
+.gamejam-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }

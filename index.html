@@ -62,7 +62,7 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Hello, I am James Driskell, although I prefer to be called Jimmy! I am an undergraduate student from Iowa State University majoring in software engineering and minoring in digital media.</p>
+                <p>Hello, I am James Driskell, although I prefer to be called Jimmy! I am a garduate from Iowa State University with a major in software engineering and minor in digital media.</p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -124,7 +124,12 @@
         
         <div class="services-list">
             <div class="work-tab-titles">
-                <a class="work-tab-links work-active-link" onclick="workopentab('gamedev')">
+                <a class="work-tab-links work-active-link" onclick="workopentab('coding')">
+                    <h2>Web/App Design</h2>
+                    <p>In terms of coding websites and apps, I have been proven to be a very strong asset to many teams.</p>
+                    <!--<a href="#">learn more</a>-->
+                </a>
+                <a class="work-tab-links" onclick="workopentab('gamedev')">
                     <h2>Game Development</h2>
                     <p>Whether it comes to excelling at game jams or working on my own passion projects, my game development skills make me a useful tool for any team.</p>
                 </a>
@@ -133,11 +138,7 @@
                     <h2>Art and Animation</h2>
                     <p>I bring numerous artistic capabilities to the table, including but not limited to traditional character animation, 3D modeling, graphic design, pixel art, and traditional illustration.</p>
                 </a>
-                <a class="work-tab-links" onclick="workopentab('coding')">
-                    <h2>Web/App Design</h2>
-                    <p>In terms of coding websites and apps, I have been proven to be a very strong asset to many teams.</p>
-                    <!--<a href="#">learn more</a>-->
-                </a>
+                
             </div>
         </div>
 
@@ -151,7 +152,7 @@
         <h1 class="sub-title">My Portfolio</h1>
 
         <!--Web/App Design-->
-        <div class="work-tab-contents" id="coding">
+        <div class="work-tab-contents work-active-tab" id="coding">
             <div class="work-list">
 
                 <div class="work">
@@ -185,24 +186,24 @@
         </div>
 
         <!--GameDev-->
-        <div class="work-tab-contents work-active-tab" id="gamedev">
+        <div class="work-tab-contents" id="gamedev">
             <div class="work-list">
+
+                <div class="work">
+                    <img src="images/blackcat.png">
+                    <div class="layer">
+                        <h3>Black Cat Bundle</h3>
+                        <p>My biggest passion project. A game being created single-handedly by me that you can support on Steam right now!</p>
+                        <a href="https://store.steampowered.com/app/3793970/Black_Cat_Bundle/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
 
                 <div class="work">
                     <img src="images/pacbros.png">
                     <div class="layer">
                         <h3>The Pac-Man Brothers</h3>
-                        <p>This fan project not only precisely recaptures the experience of the original Pac-Man game, but it also expands upon it with fresh ideas.</p>
+                        <p>This fan project adds procedural generation to its level design, making for an experience unseen in this franchise.<!--not only precisely recaptures the experience of the original Pac-Man game, but it also expands upon it with fresh ideas.--></p>
                         <a href="https://thatlefthandman.itch.io/the-pac-man-brothers"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/blackcat.png">
-                    <div class="layer">
-                        <h3>Black Cat Blitz</h3>
-                        <p>My biggest passion project. This game mixes traditional arcade platforming with elements from Poker for an experience unlike any other!</p>
-                        <a href="https://thatlefthandman.itch.io/black-cat-blitz"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
 
